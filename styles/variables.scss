@@ -1,0 +1,77 @@
+$primary: #B52113;
+$heading: #D16C0C;
+$h-text: #3D1F17;
+$text: #534741;
+$danger: #D16C0C;
+$sub: #FFF5F0;
+
+$theme-colors: (
+  "primary": #B52113,
+  "danger": #D16C0C
+);
+
+
+// TRANSITIONS
+%transition-simple {
+  transition: all 0.25s ease;
+}
+
+@mixin transition-simple($property, $duration) {
+  transition: $property $duration ease-in-out;
+}
+
+$btn-border-width: 0;
+$btn-border-radius: 50px;
+$btn-border-radius-lg: 50px;
+$btn-font-weight: 700;
+$btn-focus-width: 0;
+$input-btn-padding-y-lg: 0.65rem;
+$input-btn-padding-x-lg: 1.35rem;
+
+$input-border-radius: 0;
+$input-padding-y: 0.75rem;
+$input-border-width: 0;
+$input-focus-box-shadow: none;
+$input-height: auto;
+$input-font-weight: 700;
+$input-placeholder-color: #919191;
+
+$link-hover-decoration: none;
+
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 920px,
+        xl: 920px,
+        xxl: 920px
+);
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1260px,
+        xxl: 1320px,
+        xxxl: 3000px
+);
+$border-radius: 0.3rem;
+
+
+
+$i: 8;
+@while $i <= 80 {
+  .pt-#{$i} { padding-top: #{$i}px !important;}
+  .pb-#{$i} { padding-bottom: #{$i}px !important; }
+  .mt-#{$i} { margin-top: #{$i}px !important; }
+  .mb-#{$i} { margin-bottom: #{$i}px !important; }
+  $i: $i + 8;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.w-48 {
+  width: 48%;
+}
