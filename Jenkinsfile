@@ -1,4 +1,4 @@
-@Library('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@github.com/leonid1976/spring-creek') _
+@Library('github.com/leonid1976/spring-creek-2') _
 
 pipeline {
   environment {
