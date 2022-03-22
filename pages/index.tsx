@@ -24,7 +24,7 @@ import betterLifestyle from '../public/images/home/Better-Lifestyle.svg'
 const Home: NextPage = () => {
 
   return (
-    <PageContainer title={'Home'} className={'Home-page home-test'}>
+    <PageContainer title={'Home'} className={'Home-page home-test-page'}>
 
         <section className='hero hero-home'>
           <div className='hero__bg'>
