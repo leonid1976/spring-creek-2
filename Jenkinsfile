@@ -19,6 +19,7 @@ pipeline {
     stage('Unit Tests') {
       steps{
         echo 'Testing..'
+      }
     }
         
     // Building Docker images
@@ -39,11 +40,10 @@ pipeline {
                 	}
          }
         }
-      }
+    }
       
     stage('Deploy') {
      steps{
-       sh "chmod +x -R ${env.WORKSPACE}"
             withAWS(credentials: registryCredential, region: "${AWS_DEFAULT_REGION}") {
                 script {
 			sh './script.sh'
