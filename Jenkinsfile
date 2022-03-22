@@ -19,6 +19,8 @@ pipeline {
     stage('Unit Tests') {
       steps{
         echo 'Testing..'
+        echo 'build TAG'
+        echo IMAGE_TAG
       }
     }
         
